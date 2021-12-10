@@ -1,0 +1,58 @@
+input[type="text"] {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  width: 250px;
+  height: 35px;
+  margin: 10px;
+}
+
+.celc{
+  font-size: 50px;
+  margin: 50px;
+}
+
+
+.row{
+  width: 58%;
+  margin: auto;
+  background: #f162ff;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  padding-bottom: 10px;
+  border: #66CC99 1px solid;
+
+}
+
+.content{
+  padding: 10px;
+}
+h1{
+  text-align: center;
+  text-shadow: 3px 5px 6px #6C9, -6px -7px 6px #D9FFA7;
+
+
+}
+h2{
+  text-align: center;
+}
+.center-div{
+  text-align: center;
+}
+
+.btn-1{
+  color: white;
+  background: #79a7d3;
+}
+table{
+  width: 70%;
+  align-items: center;
+  margin: auto;
+  font-size: 18px;
+
+}
+tr{
+  margin: 10px;
+}

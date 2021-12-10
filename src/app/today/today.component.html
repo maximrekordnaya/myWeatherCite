@@ -1,0 +1,51 @@
+
+<div class="row">
+
+    <div class="content" >
+      <h1>Weather today</h1>
+      <h2> Weather in {{weather.name}}</h2>
+      <div  class="center-div">
+      <input type="text" #userInput placeholder="Enter city name">
+        <button mat-stroked-button color="primary"class="btn-1" (click)="getCity(userInput.value)">Search</button>
+      </div>
+
+
+        <h2 class="center-div celc">{{(weather.main.temp - 273).toFixed(1)}} C&#176;</h2>
+
+
+
+
+      <table>
+        <tbody>
+        <tr>
+          <td>Humidity:</td> <td>{{weather.main.humidity}} %</td>
+        </tr>
+        <tr>
+          <td>Pressure:</td> <td>{{weather.main.pressure}} hpa</td>
+        </tr>
+        <tr>
+          <td>Sunrise:</td> <td>{{weather.sys.sunrise * 1000 | date:"H:mm"}}</td>
+        </tr>
+        <tr>
+          <td>Sunset:</td> <td>{{weather.sys.sunset *1000 | date:"H:mm"}}</td>
+        </tr>
+        <tr>
+          <td>Geo coords:</td> <td>{{weather.coord.lat}}, {{weather.coord.lon}}</td>
+        </tr>
+
+        </tbody>
+      </table>
+      <div class="map" #mapElement>
+
+      </div>
+
+      <script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBboistNraZLeuvS1eNbi6waTTx-440TkQ&callback=initMap&v=weekly"
+        acync
+      </script>
+
+
+
+    </div>
+  </div>
+
